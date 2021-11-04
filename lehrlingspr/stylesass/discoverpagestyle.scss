@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200&display=swap');
+
+$primary-text-color: #D4ECDD;
+$primary-background-color: #152D35;
+$primary-text-font: Poppins, sans-serif;
+$secondary-background-color: #2A4248;
+$secondary-text-color: #E2DED0;
+$highlight-color: #06D6A0;
+$highlight-color-2: #B8E1FF;
+
+html, body {
+    background-color: $primary-background-color;
+    margin: 0;
+}
+
+h1 {
+    color: $primary-text-color;
+    font-family: $primary-text-font;
+    font-size: 70px;
+    margin-bottom: 2%;
+}
+
+.container {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    max-width:50%;
+    overflow-wrap: break-word;
+    font-family: $primary-text-font;
+    color: $primary-text-color;
+    font-size: 25px;
+}
+
+img {
+    width: 680px;
+}

@@ -16,7 +16,7 @@
         </header>
         -->
         
-        
+    <span id="circle" class="circle"></span>
         <div data-scroll-container>
             <section class="top" data-scroll-section>
                 <div class="headercontainer">
@@ -34,43 +34,105 @@
                 
                 <div class="plotcontainer">
                     <h2 id="abteilungentext" class="firstparagraphstyle" data-scroll data-scroll-speed="-2">Abteilungen</h2>
-                    <div id="abteilungenplot" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5">
-                    </div>
+                    <div id="abteilungenplot" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5"></div>
                 </div>
             </section>
             <!--
             <div class="container">
                 <div class="description panel blue">
-                  <div><h1>Horizontal snapping sections (simple)</h1>
+                    <div><h1>Horizontal snapping sections (simple)</h1>
                     <p>Scroll vertically to scrub the horizontal animation. It also dynamically snaps to the sections in an organic way based on the velocity. The snapping occurs based on the natural ending position after momentum is applied, not a simplistic "wherever it is when the user stops".</p>
                     <div class="scroll-down">Scroll down<div class="arrow"></div></div>
-                  </div>
+                    </div>
                 </div>
-              
+                
                 <section class="panel red">
-                  ONE
+                    ONE
                 </section>
                 <section class="panel orange">
-                  TWO
+                    TWO
                 </section>
                 <section class="panel purple">
-                  THREE
+                    THREE
                 </section>
                 <section class="panel green">
-                  FOUR
+                    FOUR
                 </section>
                 <section class="panel gray">
-                  FIVE
+                    FIVE
                 </section>
             </div>
             -->
             <section class="bottom" data-scroll-section>
                 <div class="projektecontainer">
                     <h2 id="projektetext" class="secondparagraphstyle">Projekte</h2>
+
                     <div class="container-bachmix">
+                        <ul>
+                            <li class="secondparagraphstyle beschreibung">BACHMIX</li>
+                        </ul>
                         <img id="img-bachmix-logo" src="img/bachmix-resized.png" data-scroll data-scroll-direction="vertical" data-scroll-speed="4">
                         <img id="img-bachmix-aufbau" src="img/bachmix-aufbau.jpg" data-scroll data-scroll-direction="vertical" data-scroll-speed="-2">
                     </div>
+                    <input type="button" id="btn-discover-bachmix" class="btn-discover btn-anim" onclick="location.href='discoverpages/bachmix.html';" value="learn more >"></button>
+
+                    <div class="container-splitter"></div>
+
+                    <div class="container-ectt-pntt">
+                        <ul>
+                            <li class="secondparagraphstyle beschreibung">ECTT und PNTT</li>
+                        </ul>
+                        <div class="pntt-cont-img">
+                            <div>
+                                <p class="secondparagraphstyle beschreibung" data-scroll data-scroll-direction="vertical"><span class="ectt-pntt-highlight-text">P</span>rofi<span class="ectt-pntt-highlight-text">N</span>etConformance<span class="ectt-pntt-highlight-text">T</span>est<span class="ectt-pntt-highlight-text">T</span>ool</p>
+                                <p class="secondparagraphstyle beschreibung" data-scroll data-scroll-direction="vertical"><span class="ectt-pntt-highlight-text">E</span>ther<span class="ectt-pntt-highlight-text">C</span>ATConformance<span class="ectt-pntt-highlight-text">T</span>est<span class="ectt-pntt-highlight-text">T</span>ool</p>
+                            </div>
+                            <img id="img-pntt" src="img/pntt.png" data-scroll data-scroll-direction="vertical">
+                        </div>
+                    </div>
+                    <button id="btn-discover-bachmix" class="btn-discover btn-anim">learn more ></button>
+
+                    <div class="container-splitter"></div>
+
+                    <div class="container-llw">
+                        <ul>
+                            <li class="secondparagraphstyle beschreibung">Lehrlingsleistungswettbewerb</li>
+                        </ul>
+                        <div class="llw-cont-img">
+                            <p class="secondparagraphstyle paragraph-detail">Software für Buchverleih</p>
+                            <img id="img-llw" src="img/LLW.png">
+                        </div>
+                    </div>
+
+                    <div class="container-splitter"></div>
+
+                    <div class="container-munbind">
+                        <ul>
+                            <li class="secondparagraphstyle beschreibung">M-Unbind</li>
+                        </ul>
+                        <div class="munbind-cont-img">
+                            <p class="secondparagraphstyle paragraph-detail">Entpacken eines M-Files</p>
+                            <img id="img-munbind" src="img/munbind.png">
+                        </div>
+                    </div>
+
+                    <div class="container-splitter"></div>
+
+                    <div class="container-klesenza">
+                        <ul>
+                            <li class="secondparagraphstyle beschreibung">Klesenza</li>
+                        </ul>
+                        <div class="klesenza-cont-img">
+                            <p class="secondparagraphstyle paragraph-detail">Visualisierung eines Wasserkraftwerks</p>
+                            <div class="container-klesena-images">
+                                <img id="img-klesenza-main" src="img/klesenza_mainpage.png">
+                                <img id="img-klesenza-stats" src="img/klesenza_parameter.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-splitter"></div>
+
                 </div>
 
                 <div class="container-sprachen">
@@ -90,7 +152,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="plotscript.js"></script>
     <script src="scrollscript.js"></script>
     <script src="scrolltrigger.js"></script>
+    <script src="cursorscript.js"></script>
 </html>

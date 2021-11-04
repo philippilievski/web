@@ -5,6 +5,8 @@ $primary-background-color: #152D35;
 $primary-text-font: Poppins, sans-serif;
 $secondary-background-color: #2A4248;
 $secondary-text-color: #E2DED0;
+$highlight-color: #06D6A0;
+$highlight-color-2: #B8E1FF;
 
 html, body {
     background-color: $primary-background-color;
@@ -12,7 +14,7 @@ html, body {
 }
 
 //*********Scrollbar***************
-/*
+
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -27,7 +29,7 @@ body::-webkit-scrollbar {
     outline: 1px solid slategrey;
     border-radius: 10px;
 }
-*/  
+
 
 .titletext {
     font-family: $primary-text-font;
@@ -71,6 +73,46 @@ body::-webkit-scrollbar {
     flex-direction: row;
 }
 
+//******BUTTON**********
+
+.btn-discover {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $highlight-color;
+    border-radius: 0.6em;
+    color: $highlight-color;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 50px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    //text-transform: uppercase;
+    font-family: $primary-text-font;
+    font-weight: 700;
+}
+
+.btn-anim {
+    // background: $yellow;
+    border-color: $highlight-color;
+    color: #fff;
+    background: {
+        image: linear-gradient(35deg,$highlight-color 50%, transparent 50%);
+        position: 100%;
+        size: 400%;
+    }
+    transition: background 500ms ease-in-out;
+    
+    &:hover {
+        background-position: 0;
+    }
+}
+
 //*********Abteilung***********
 
 #abteilungenplot {
@@ -91,7 +133,7 @@ body::-webkit-scrollbar {
 }
 
 .projektecontainer {
-    height: 100vh;
+    height: 500vh;
     margin-top: 5%;
     display: flex;
     flex-wrap: nowrap;
@@ -99,17 +141,111 @@ body::-webkit-scrollbar {
     background-color: $secondary-background-color;
 }
 
-.containerbachmix {
+.paragraph-detail {
+    margin-left: 5%;
+}
+
+.beschreibung {
+    margin-left: 5%;
+}
+
+
+//******BACHMIX*********
+.container-bachmix {
     width: 100%;
 }
 
 #img-bachmix-logo {
-    margin-left: 20vh;
+    margin-left: 40vh;
+    margin-bottom: 20vh;
 }
 
 #img-bachmix-aufbau {
-    margin-left: 20vh;
+    margin-left: 30vh;
+    border: 10px solid $primary-text-color;
 }
+
+/*
+.btn-discover {
+    width: 10vw;
+    height: 5vh;
+    margin-left: 45%;
+    margin-top: 5%;
+    background-color: $highlight-color;
+}
+*/
+
+
+//*******ECTT und PNTT*************
+.container-ectt-pntt{
+    margin-top: 5vh;
+}
+
+#img-pntt{
+    margin-left: 20vw;
+    max-width: 800px;
+    border: 10px solid $primary-text-color;
+}
+
+.pntt-cont-img{
+    display: flex;
+}
+
+.ectt-pntt-highlight-text{
+    color: $highlight-color;
+    font-weight: bold;
+}
+
+//*******LLW*******
+.container-llw{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-llw {
+    max-width: 600px;
+    border: 10px solid $primary-text-color;
+    margin-left: 20vw;
+}
+
+.llw-cont-img{
+    display: flex;
+}
+
+#paragraph-detail-llw {
+    margin-left: 5%;
+}
+
+//*********M-Unbind****************
+.container-munbind {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.munbind-cont-img {
+    display: flex;
+}
+
+#img-munbind {
+    margin-left: 5%;
+}
+
+//*********Klesenza**************
+#img-klesenza-main {
+    max-width: 900px;
+    border: 10px solid $primary-text-color;
+}
+#img-klesenza-stats {
+    max-width: 900px;
+    border: 10px solid $primary-text-color;
+}
+
+.container-klesena-images {
+    margin-left: 2%;
+}
+
 
 //**************Header*************
 
@@ -175,3 +311,20 @@ body::-webkit-scrollbar {
     display: flex;
     flex-wrap: nowrap;
   }
+
+.container-splitter {
+    width: 100%;
+    height: 1vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $primary-text-color;
+}
+
+.circle {
+	position: absolute;
+    border: solid 1px $primary-text-color;
+	width: 100px; 
+	height: 100px; 
+    border-radius: 50%;  
+    z-index: 0;
+}
