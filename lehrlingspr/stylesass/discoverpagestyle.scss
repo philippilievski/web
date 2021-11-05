@@ -9,7 +9,7 @@ $highlight-color: #06D6A0;
 $highlight-color-2: #B8E1FF;
 
 html, body {
-    background-color: $primary-background-color;
+    background-color: $secondary-background-color;
     margin: 0;
 }
 
@@ -17,7 +17,7 @@ h1 {
     color: $primary-text-color;
     font-family: $primary-text-font;
     font-size: 70px;
-    margin-bottom: 2%;
+    margin: 0;
 }
 
 .container {
@@ -27,6 +27,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1%;
 }
 
 p {
@@ -39,4 +40,26 @@ p {
 
 img {
     width: 680px;
+}
+
+.btn-back {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $highlight-color;
+    border-radius: 0.6em;
+    color: $highlight-color;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    //text-transform: uppercase;
+    font-family: $primary-text-font;
+    font-weight: 700;
+    margin-top: 1%;
 }

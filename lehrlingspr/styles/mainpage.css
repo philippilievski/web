@@ -2,6 +2,7 @@
 html, body {
   background-color: #152D35;
   margin: 0;
+  overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -110,7 +111,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .projektecontainer {
-  height: 500vh;
+  height: 650vh;
   margin-top: 5%;
   display: flex;
   flex-wrap: nowrap;
@@ -123,7 +124,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .beschreibung {
+  font-size: 50px;
   margin-left: 5%;
+  font-weight: bold;
 }
 
 .container-bachmix {
@@ -137,6 +140,7 @@ body::-webkit-scrollbar-thumb {
 
 #img-bachmix-aufbau {
   margin-left: 30vh;
+  margin-bottom: 10%;
   border: 10px solid #D4ECDD;
 }
 
@@ -216,6 +220,34 @@ body::-webkit-scrollbar-thumb {
   margin-left: 2%;
 }
 
+.lap-cont-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.liststyle {
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  color: Poppins, sans-serif;
+  margin-left: 5%;
+}
+
+.img-lap {
+  max-width: 700px;
+  margin-bottom: 5%;
+  border: 10px solid #D4ECDD;
+}
+
+.container-other {
+  margin-top: 0;
+}
+
+#this-text {
+  color: #06D6A0;
+}
+
 .topleftitem {
   width: 50%;
   height: 40vh;
@@ -238,13 +270,13 @@ body::-webkit-scrollbar-thumb {
 
 #sprachentext {
   margin-top: 5%;
-  margin-left: 5%;
 }
 
 .thirdparagraphstyle {
   font-size: 40px;
   font-family: Poppins, sans-serif;
   color: #E2DED0;
+  margin-left: 5%;
 }
 
 .images-sprachen > * {
@@ -254,6 +286,23 @@ body::-webkit-scrollbar-thumb {
 
 .container-sprachen {
   height: 40vh;
+}
+
+.container-danke {
+  height: 100vh;
+  background-color: #2A4248;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#danketext {
+  font-family: Poppins, sans-serif;
+  color: #D4ECDD;
+  font-size: 60px;
 }
 
 .container-other {
@@ -277,9 +326,9 @@ body::-webkit-scrollbar-thumb {
 
 .container-splitter {
   width: 100%;
-  height: 1vh;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  height: 20px;
+  margin-top: 3%;
+  margin-bottom: 3%;
   background-color: #D4ECDD;
 }
 
