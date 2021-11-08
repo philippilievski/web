@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb {
 .plotcontainer {
   display: flex;
   flex-direction: row;
+  width: 100vw;
 }
 
 .btn-discover {
@@ -339,6 +340,10 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
   border-radius: 50%;
   z-index: 0;
+}
+
+.container-game {
+  height: 20vh;
 }
 
 /*# sourceMappingURL=mainpage.css.map */
