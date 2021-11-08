@@ -4,7 +4,7 @@
     <head>
         <link rel="stylesheet" href="styles/mainpage.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         
@@ -12,21 +12,17 @@
         <div data-scroll-container>
             <section class="top" data-scroll-section>
                 <div class="headercontainer">
-                    <div class="topleftitem">
-                        <h1 class="titletext" data-scroll data-scroll-speed="-2">P h i l i p p</h1>
-                        <h1 class="titletext" id="bachmanntext" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">I l i e v s k i</h1>
-                    </div>
-                    <div class="topmiddleitem">
+                        <h1 class="titletext">P h i l i p p</h1>
+                        <h1 class="titletext">I l i e v s k i</h1>
                         <p class="firstparagraphstyle">IT-Informatik</p>
-                    </div>
                     <div class="toprightitem">
                         <span class="verticaltext">lehre bei bachmann</p>
                     </div>
                 </div>
                 
                 <div class="plotcontainer">
-                    <h2 id="abteilungentext" class="firstparagraphstyle" data-scroll data-scroll-speed="-2">Abteilungen</h2>
-                    <div id="abteilungenplot" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5"></div>
+                    <h2 class="firstparagraphstyle" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1">Abteilungen</h2>
+                    <div id="abteilungenplot" data-scroll data-scroll-direction="horizontal" data-scroll-speed="1"></div>
                 </div>
             </section>
 
@@ -38,8 +34,10 @@
                         <ul>
                             <li class="secondparagraphstyle beschreibung">BACHMIX</li>
                         </ul>
-                        <img id="img-bachmix-logo" src="img/bachmix-resized.png" data-scroll data-scroll-direction="vertical" data-scroll-speed="4">
-                        <img id="img-bachmix-aufbau" src="img/bachmix-aufbau.jpg" data-scroll data-scroll-direction="vertical" data-scroll-speed="-2">
+                        <div class="container-bachmix-images">
+                            <img id="img-bachmix-logo" src="img/bachmix-resized.png" data-scroll data-scroll-direction="vertical" data-scroll-speed="4">
+                            <img id="img-bachmix-aufbau" src="img/bachmix-aufbau.jpg" data-scroll data-scroll-direction="vertical" data-scroll-speed="-2">
+                        </div>
                     </div>
                     <input type="button" id="btn-discover-bachmix" class="btn-discover btn-anim" onclick="location.href='discoverpages/bachmix.html';" value="learn more >"></button>
 
@@ -67,6 +65,8 @@
                         </ul>
                         <div class="llw-cont-img">
                             <p class="secondparagraphstyle paragraph-detail">Software f&uuml;r Buchverleih</p>
+                            <p class="secondparagraphstyle paragraph-detail">Microcontroller Programmierung</p>
+                            <p class="secondparagraphstyle paragraph-detail">SQL</p>
                             <img id="img-llw" src="img/LLW.png">
                         </div>
                     </div>
@@ -129,6 +129,7 @@
                             <ul>
                                 <li class="secondparagraphstyle">Bus-Pr&uuml;fger&auml;t</li>
                                 <li class="secondparagraphstyle">Ampelsteuerung</li>
+                                <li class="secondparagraphstyle">Solution Center Bugfixes</li>
                                 <li id="this-text" class="secondparagraphstyle">this.</li>
                             </ul>
                         </ul>
@@ -139,11 +140,11 @@
                 <div class="container-sprachen">
                     <h2 id="sprachentext" class="thirdparagraphstyle">Programmiersprachen</h2>
                     <div class="images-sprachen">
-                        <img id="img-sprachen-c" src="img/C.png">
-                        <img id="img-sprachen-javascript" src="img/JS.png">
-                        <img id="img-sprachen-python" src="img/python.png">
-                        <img id="img-sprachen-csharp" src="img/csharp.png">
-                        <img id="img-sprachen-java" src="img/java.png">
+                        <img class="img-sprache" id="img-sprachen-c" src="img/C.png">
+                        <img class="img-sprache" id="img-sprachen-javascript" src="img/JS.png">
+                        <img class="img-sprache" id="img-sprachen-python" src="img/python.png">
+                        <img class="img-sprache" id="img-sprachen-csharp" src="img/csharp.png">
+                        <img class="img-sprache" id="img-sprachen-java" src="img/java.png">
                     </div>
                 </div>
 
@@ -169,6 +170,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="plotscript.js"></script>
     <script src="scrollscript.js"></script>
-    <script src="scrolltrigger.js"></script>
     <script src="cursorscript.js"></script>
 </html>

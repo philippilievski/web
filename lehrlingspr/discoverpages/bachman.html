@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8" />
     <title>Bachmann Platformer</title>
-    <link rel="stylesheet" href="/css/myStyle.css">
+    <link rel="stylesheet" href="../styles/bachman.css">
 	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0-beta.3/phaser.min.js"></script>
     <style type="text/css">
@@ -13,12 +13,11 @@
     </style>
 </head>
 
-
 <body>
     <div class="center">
-        <label id="lblplayername" for="playername">Name:</label><br>
-        <input id="playername" type="text" ><br>
-        <br><br><br><button id="buttonStart" onclick="startGame()" class="button">Start the Game</button>
+        <label id="lblplayername" for="playername">Name:</label>
+        <input id="playername" type="text" >
+        <button id="buttonStart" onclick="startGame()" class="button btn-anim">Start the Game</button>
     </div>
 
     <div id='mygame' style="margin:auto; padding: 10px; width: 50%;"></div>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:wght@200&display=swap');
+
+$primary-text-color: #D4ECDD;
+$primary-background-color: #152D35;
+$primary-text-font: Poppins, sans-serif;
+$secondary-background-color: #2A4248;
+$secondary-text-color: #E2DED0;
+$highlight-color: #06D6A0;
+$highlight-color-2: #B8E1FF;
+
+html, body {
+    background-color: $primary-background-color;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lblplayername {
+    color: $primary-text-color;
+    font-family: $primary-text-font;
+    font-size: 70px;
+    margin: 0;
+}
+
+#playername {
+    width: 20%;
+}
+
+.button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $highlight-color;
+    border-radius: 0.6em;
+    color: $highlight-color;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 50px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    font-family: $primary-text-font;
+    font-weight: 700;
+}
+
+.btn-anim {
+    // background: $yellow;
+    border-color: $highlight-color;
+    color: #fff;
+    background: {
+        image: linear-gradient(35deg,$highlight-color 50%, transparent 50%);
+        position: 100%;
+        size: 400%;
+    }
+    transition: background 500ms ease-in-out;
+    
+    &:hover {
+        background-position: 0;
+    }
+}

@@ -12,6 +12,7 @@ html, body {
     background-color: $primary-background-color;
     margin: 0;
     overflow: hidden;
+    font-size: 20px;
 }
 
 //*********Scrollbar***************
@@ -35,9 +36,9 @@ body::-webkit-scrollbar {
 .titletext {
     font-family: $primary-text-font;
     color: $primary-text-color;
-    font-size: 120px;
-    position: absolute;
-    margin-top: 5%;
+    font-size: 6rem;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 5%;
 }
 
@@ -47,14 +48,11 @@ body::-webkit-scrollbar {
     writing-mode: vertical-lr;
 }
 
-#bachmanntext {
-    margin-top: 15%;
-}
-
 .firstparagraphstyle {
-    font-size: 40px;
+    font-size: 2rem;
     font-family: $primary-text-font;
     color: $primary-text-color;
+    margin-left: 5%;
 }
 
 .secondparagraphstyle {
@@ -66,14 +64,20 @@ body::-webkit-scrollbar {
 .headercontainer {
     height: 50vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.plotcontainer {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+//******phone********
+@media (max-width: 768px) {
+    .titletext {
+        font-size: 3rem;
+    }
+    .firstparagraphstyle {
+        font-size: 1rem;
+    }
 }
+
+
 
 //******BUTTON**********
 
@@ -117,14 +121,14 @@ body::-webkit-scrollbar {
 
 //*********Abteilung***********
 
-#abteilungenplot {
-    margin-left: 10%;
-    width: 45%;
-    height: 16%;
+.plotcontainer {
+    display: flex;
+    flex-direction: row;
 }
 
-#abteilungentext {
-    margin-left: 5%;
+#abteilungenplot {
+    width: 60%;
+    height: 20%;
 }
 
 //*********Projekte************
@@ -135,7 +139,6 @@ body::-webkit-scrollbar {
 }
 
 .projektecontainer {
-    height: 650vh;
     margin-top: 5%;
     display: flex;
     flex-wrap: nowrap;
@@ -157,32 +160,38 @@ body::-webkit-scrollbar {
 //******BACHMIX*********
 .container-bachmix {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 
 #img-bachmix-logo {
     margin-left: 40vh;
     margin-bottom: 20vh;
+    max-width: 100%;
 }
 
 #img-bachmix-aufbau {
-    margin-left: 30vh;
+    margin-left: 10vw;
     margin-bottom: 10%;
     border: 10px solid $primary-text-color;
 }
 
-/*
-.btn-discover {
-    width: 10vw;
-    height: 5vh;
-    margin-left: 45%;
-    margin-top: 5%;
-    background-color: $highlight-color;
+@media (max-width: 768px) {
+    #img-bachmix-aufbau {
+        width: 100%;
+        margin: 0;
+        border: 0px;
+    }
+    #img-bachmix-logo {
+        margin: 0;
+    }
 }
-*/
-
 
 //*******ECTT und PNTT*************
 .container-ectt-pntt{
+    display: flex;
+    flex-direction: column;
     margin-top: 5vh;
 }
 
@@ -199,6 +208,25 @@ body::-webkit-scrollbar {
 .ectt-pntt-highlight-text{
     color: $highlight-color;
     font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .pntt-cont-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    #img-pntt {
+        margin: 0;
+        width: 100%;
+        border: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .secondparagraphstyle {
+        font-size: 1rem;
+    }
 }
 
 //*******LLW*******
@@ -222,6 +250,18 @@ body::-webkit-scrollbar {
     margin-left: 5%;
 }
 
+@media (max-width: 768px) {
+    .llw-cont-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    #img-llw {
+        margin: 0;
+        width: 100%;
+        border: 0px;
+    }
+}
+
 //*********M-Unbind****************
 .container-munbind {
     margin-top: 5%;
@@ -237,7 +277,20 @@ body::-webkit-scrollbar {
     margin-left: 5%;
 }
 
+@media (max-width: 768px) {
+    .munbind-cont-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    #img-munbind {
+        margin: 0;
+        width: 25%;
+        border: 0px;
+    }
+}
+
 //*********Klesenza**************
+
 #img-klesenza-main {
     max-width: 900px;
     border: 10px solid $primary-text-color;
@@ -249,6 +302,25 @@ body::-webkit-scrollbar {
 
 .container-klesena-images {
     margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .container-klesena-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    #img-klesenza-main {
+        margin: 0;
+        width: 100%;
+        border: 0px;
+    }
+    #img-klesenza-stats {
+        margin: 0;
+        width: 100%;
+        border: 0px;
+    }
 }
 
 
@@ -261,7 +333,7 @@ body::-webkit-scrollbar {
 }
 
 .liststyle {
-    font-size: 25px;
+    font-size: 1rem;
     font-family: $primary-text-font;
     color: $primary-text-font;
     margin-left: 5%;
@@ -273,22 +345,36 @@ body::-webkit-scrollbar {
     border: 10px solid $primary-text-color;
 }
 
+@media (max-width: 768px) {
+    .lap.cont-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .img-lap {
+        width: 100%;
+        border: 0px;
+    }
+}
+
 
 //*********andere projekte************
 .container-other {
-    margin-top: 0;
+    display: flex;
+    width: 100vh;
 }
 #this-text {
     color: $highlight-color;
 }
 
+@media (max-width: 768px) {
+    .container-other {
+        align-items: center;
+    }
+}
+
 
 //**************Header****************
-
-.topleftitem {
-    width: 50%;
-    height: 40vh;
-}
 
 .topmiddleitem {
     width: 300px;
@@ -306,26 +392,46 @@ body::-webkit-scrollbar {
 }
 
 //************Programmiersprachen*********
+.container-sprachen{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 #sprachentext {
     margin-top: 5%;
 }
 
 .thirdparagraphstyle {
-    font-size: 40px;
+    font-size: 2rem;
     font-family: $primary-text-font;
     color: $secondary-text-color;
     margin-left: 5%;
 }
 
-.images-sprachen > *{
-    height: 220px;
-    margin-left: 8%;
+.images-sprachen {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 }
 
-.container-sprachen {
-    height: 40vh;
+.img-sprache {
+    width: 150px;
+    max-width: 220px;
+    height: auto;
 }
+
+
+@media (max-width: 768px) {
+    .thirdparagraphstyle {
+        font-size: 1rem;
+    }
+    .img-sprache {
+        width: 70px;
+    }
+}
+
+
 
 //*****DANKE********
 .container-danke {
@@ -346,11 +452,6 @@ body::-webkit-scrollbar {
 }
 
 //***********Other*************
-
-.container-other {
-    height: 100vh;
-    margin-top: 0px;
-}
 
 .fourthparagraphstyle {
     font-size: 40px;
