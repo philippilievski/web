@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="de">
     <head>
+        <title>Philipp Ilievski</title>
         <link rel="stylesheet" href="styles/mainpage.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta name="description" content="Philipp Ilievski Präsentation über die Lehrlingsausbildung bei Bachmann">
     </head>
     <body>
-        
+
     <span id="circle" class="circle"></span>
         <div data-scroll-container>
             <section class="top" data-scroll-section>
@@ -171,4 +174,7 @@
     <script src="plotscript.js"></script>
     <script src="scrollscript.js"></script>
     <script src="cursorscript.js"></script>
+    <script>
+        window.dispatchEvent(new Event('resize'));
+    </script>
 </html>

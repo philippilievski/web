@@ -11,8 +11,14 @@ $highlight-color-2: #B8E1FF;
 html, body {
     background-color: $primary-background-color;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: visible;
+    }
 }
 
 //*********Scrollbar***************
@@ -60,6 +66,13 @@ body::-webkit-scrollbar {
     font-family: $primary-text-font;
     color: $secondary-text-color;
 }
+
+@media (max-width: 768px) {
+    .secondparagraphstyle {
+        font-size: 1rem;
+    }
+}
+
 
 .headercontainer {
     height: 50vh;
@@ -112,10 +125,16 @@ body::-webkit-scrollbar {
         position: 100%;
         size: 400%;
     }
-    transition: background 500ms ease-in-out;
+    transition: background 400ms ease-in-out;
     
     &:hover {
         background-position: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-discover {
+        padding: 1em 1em;
     }
 }
 
@@ -198,6 +217,7 @@ body::-webkit-scrollbar {
 #img-pntt{
     margin-left: 20vw;
     max-width: 800px;
+    height: auto;
     border: 10px solid $primary-text-color;
 }
 
@@ -223,12 +243,6 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (max-width: 768px) {
-    .secondparagraphstyle {
-        font-size: 1rem;
-    }
-}
-
 //*******LLW*******
 .container-llw{
     margin-top: 5%;
@@ -238,8 +252,9 @@ body::-webkit-scrollbar {
 
 #img-llw {
     max-width: 600px;
+    height: auto;
     border: 10px solid $primary-text-color;
-    margin-left: 20vw;
+    margin-left: 10%;
 }
 
 .llw-cont-img{
@@ -247,7 +262,7 @@ body::-webkit-scrollbar {
 }
 
 #paragraph-detail-llw {
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 @media (max-width: 768px) {
@@ -293,10 +308,12 @@ body::-webkit-scrollbar {
 
 #img-klesenza-main {
     max-width: 900px;
+    height: auto;
     border: 10px solid $primary-text-color;
 }
 #img-klesenza-stats {
     max-width: 900px;
+    height: auto;
     border: 10px solid $primary-text-color;
 }
 
@@ -310,6 +327,8 @@ body::-webkit-scrollbar {
     .container-klesena-images {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
+        margin-bottom: 2%;
     }
     #img-klesenza-main {
         margin: 0;
